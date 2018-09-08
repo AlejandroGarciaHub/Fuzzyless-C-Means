@@ -425,7 +425,7 @@ fcm(char *fname, char *fcentroides) {
          */
         //    printf("Max dif: %lf\n",max_diff);
         //  printf("Epsilon: %lf\n",epsilon);
-    } while (max_diff > epsilon);
+    } while (fabs(max_diff) > epsilon);
     printf("Iteracion: %d\n",iteracion);
     
     gettimeofday(&t1, 0);
